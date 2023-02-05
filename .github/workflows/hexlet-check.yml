@@ -15,7 +15,7 @@ jobs:
       - run: npm install
       # Ставим зависимости
       - name: Setup project
-        run:
+        run: |
           install build
           make setup
       # Запускаем линтер
