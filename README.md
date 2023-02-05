@@ -1,3 +1,7 @@
+Repository name: hexlet-ci-app
+
+![Actions Status](https://github.com/CyberWarrior91/hexlet-ci-app/actions/workflows/hexlet-check.yml/badge.svg)
+
 # Example app for CI Hexlet course
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
