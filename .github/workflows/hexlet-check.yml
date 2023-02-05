@@ -15,10 +15,12 @@ jobs:
       - run: npm install
       # Ставим зависимости
       - name: Setup project
-        run: |
+        run:
           install build
           make setup
       # Запускаем линтер
+      - name: Make build
+        run: npm run build
       - name: Run Linter
         run: make lint
       # у шагов может быть имя, иногда это помогает отладке
