@@ -12,7 +12,7 @@ jobs:
           make start
       # Запускаем линтер
       - name: Run Linter
-          run: make lint
+        run: make lint
       # у шагов может быть имя, иногда это помогает отладке
       # имя выводится на Github при просмотре сборки
       - name: run tests
