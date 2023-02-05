@@ -16,6 +16,7 @@ jobs:
       # Ставим зависимости
       - name: Setup project
         run: |
+          install build
           make setup
           make start
       # Запускаем линтер
