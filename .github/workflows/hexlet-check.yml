@@ -1,0 +1,19 @@
+jobs:
+  build: # имя взято для примера
+    runs-on: ubuntu-latest
+
+    steps:
+      # Клонируем репозиторий
+      - uses: actions/checkout@v2
+      # Ставим зависимости
+      - name: Setup project
+        run: |
+          make setup
+          make start
+      # Запускаем линтер
+      - name: Run Linter
+          run: make lint
+      # у шагов может быть имя, иногда это помогает отладке
+      # имя выводится на Github при просмотре сборки
+      - name: run tests
+        run: make test
